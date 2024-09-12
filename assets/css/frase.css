@@ -28,3 +28,60 @@ body {
   color: #6a889c;
   font-style: normal;
 }
+
+p > span {
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.parole {
+  display: inline-block;
+}
+
+.parole i {
+  position: absolute;
+  top: -50px;
+}
+
+.parole i:nth-of-type(1) {
+  animation: fade 2500ms 1s both;
+}
+
+.parole i:nth-of-type(2) {
+  animation: fade 2500ms 3000ms both;
+}
+
+.parole i:nth-of-type(3) {
+  animation: fadeEnd 2500ms 5500ms both;
+}
+
+@keyframes fade {
+  0% {
+    top: -50px;
+    opacity: 0;
+  }
+  50% {
+    top: 0px;
+    opacity: 1;
+  }
+  100% {
+    top: 50px;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeEnd {
+  0% {
+    top: -50px;
+    opacity: 0;
+  }
+  50% {
+    top: 0px;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    opacity: 1;
+  }
+}
