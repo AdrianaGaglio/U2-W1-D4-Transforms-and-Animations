@@ -22,23 +22,40 @@
         position: absolute;
         top: -99px;
         transition: top 500ms;
-        animation: moveWords 10s 1s 3;
+        animation: moveWords 9s 1s 3;
       }
 
       .parole i {
-        display: block;
         opacity: 0;
+        display: block;
+        animation: fade 1s 300ms both;
+        transition: all 1s;
       }
 
       @keyframes moveWords {
         0% {
+          top: -99px;
+        }
+        33.333% {
           top: -66px;
         }
-        50% {
+        66.666% {
           top: -33px;
         }
         100% {
           top: 0px;
+        }
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0;
+        }
+        50% {
+          opacity: 0.5;
+        }
+        to {
+          opacity: 1;
         }
       }
     </style>
