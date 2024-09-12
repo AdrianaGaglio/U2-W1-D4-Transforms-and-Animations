@@ -5,6 +5,26 @@
 4 mostrare 1 parola e nascondere le altre 2
 5 animare 1 parola (fadein - fadeout con spostamento)
 6 animare le altre 2 parole
-7 ritardare progressivamente l'animazione delle altre 2 parole 
+7 ritardare progressivamente l'animazione delle altre 2 parole
 */
 
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Indie+Flower&display=swap");
+
+body {
+  font-family: "Bree Serif", serif;
+  letter-spacing: 1px;
+  color: #333333;
+}
+
+#testoAlternato {
+  border: 2px solid #666666;
+  padding: 1.5rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  width: 600px;
+}
+
+.parole > i {
+  color: #6a889c;
+  font-style: normal;
+}
